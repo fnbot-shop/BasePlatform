@@ -1,0 +1,10 @@
+﻿{
+  "name": "Base Platform",
+  "description": "Just a test platform",
+  "version": "1.0",
+  "guid": "e860933b256c41c78688cd03d8bae783",
+  "main": "BasePlatform.BasePlatform",
+  "type": "platform",
+  "verify": true,
+  "pdb": true
+}

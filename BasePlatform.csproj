@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="dotnet BuildEventHandler/BuildEventHandler.dll $(ProjectDir) $(TargetPath)" />
+  </Target>
+  <ItemGroup>
+    <Reference Include="fnbot.shop.Backend">
+      <HintPath>References\fnbot.shop.Backend.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

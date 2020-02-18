@@ -1,0 +1,11 @@
+﻿.vs/
+
+bin/
+obj/
+
+*.fnprv
+*.fnpub
+
+!BuildEventHandler/*.dll
+!References/*.dll
+!References/*.pdb
